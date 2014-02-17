@@ -72,6 +72,14 @@ ModelImporter:
     100132: stool_018
     100134: table_s_000
     100136: table_r_000
+    100138: candle
+    100140: chandelier
+    100142: shield
+    100144: candle_001
+    100146: candle_002
+    100148: candle_003
+    100150: candle_004
+    100152: stairs
     400000: //RootNode
     400002: Cube
     400004: Cube_001
@@ -141,6 +149,14 @@ ModelImporter:
     400132: stool_018
     400134: table_s_000
     400136: table_r_000
+    400138: candle
+    400140: chandelier
+    400142: shield
+    400144: candle_001
+    400146: candle_002
+    400148: candle_003
+    400150: candle_004
+    400152: stairs
     2300000: //RootNode
     2300002: Cube
     2300004: Cube_001
@@ -210,6 +226,14 @@ ModelImporter:
     2300132: stool_018
     2300134: table_s_000
     2300136: table_r_000
+    2300138: candle
+    2300140: chandelier
+    2300142: shield
+    2300144: candle_001
+    2300146: candle_002
+    2300148: candle_003
+    2300150: candle_004
+    2300152: stairs
     3300000: //RootNode
     3300002: Cube
     3300004: Cube_001
@@ -279,6 +303,14 @@ ModelImporter:
     3300132: stool_018
     3300134: table_s_000
     3300136: table_r_000
+    3300138: candle
+    3300140: chandelier
+    3300142: shield
+    3300144: candle_001
+    3300146: candle_002
+    3300148: candle_003
+    3300150: candle_004
+    3300152: stairs
     4300000: Plane
     4300002: Cylinder_010
     4300004: Cylinder_009
@@ -347,6 +379,14 @@ ModelImporter:
     4300130: stool_017
     4300132: table_s_000
     4300134: table_r_000
+    4300136: candle
+    4300138: shield
+    4300140: chandelier
+    4300142: candle_002
+    4300144: candle_001
+    4300146: candle_003
+    4300148: candle_004
+    4300150: stairs
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -372,7 +412,7 @@ ModelImporter:
     addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     weldVertices: 1

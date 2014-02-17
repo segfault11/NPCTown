@@ -1,17 +1,16 @@
  function OnTriggerEnter (other : Collider) 
     { 
-        if(other.gameObject.name == "ladder")
+        if(other.gameObject.name == "stairs")
         {
-            transform.GetComponent(CharacterController).slopeLimit = 95; 
+            transform.GetComponent(CharacterController).slopeLimit = 90; 
             transform.GetComponent("CharacterMotor").sliding.enabled = false;
         }
     } 
  
     function OnTriggerExit (other : Collider) 
     { 
-        if(other.gameObject.name == "ladder")
+        if(other.gameObject.name == "stairs")
         {
-            print("leaving ladder");
             transform.GetComponent(CharacterController).slopeLimit = 45; 
             transform.GetComponent("CharacterMotor").sliding.enabled = true;
         }
