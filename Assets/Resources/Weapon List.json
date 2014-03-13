@@ -1,0 +1,59 @@
+{
+  "Unknown sword": {
+    "id": 1,
+    "type": 1,
+    "range": 1.5,
+    "period": 1,
+    "damage": 20,
+    "arrow_velocity": 0,
+    "aimpose": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "hippose": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "description": "Hello World"
+  },
+  "Unknown Crossbow": {
+    "id": "2",
+    "type": 3,
+    "range": 70,
+    "period": 5,
+    "damage": 15,
+    "arrow_velocity": 45,
+    "hippose": {
+      "x": 0.444519,
+      "y": -0.6671124,
+      "z": 1.053223
+    },
+    "aimpose": {
+      "x": 0,
+      "y": -0.2649784,
+      "z": 0.2545166
+    },
+    "description": "Hello World"
+  },
+  "Bass Spear": {
+    "id": "3",
+    "type": 2,
+    "range": 3,
+    "period": 2,
+    "damage": 30,
+    "arrow_velocity": 0,
+    "aimpose": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "hippose": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "description": "Hello World"
+  }
+}
