@@ -20,6 +20,8 @@ ModelImporter:
     100028: Cylinder_009
     100030: tower_001
     100032: Cube_004
+    100034: castle
+    100036: tower
     400000: //RootNode
     400002: Cube
     400004: Cube_001
@@ -37,6 +39,8 @@ ModelImporter:
     400028: Cylinder_009
     400030: tower_001
     400032: Cube_004
+    400034: castle
+    400036: tower
     2300000: Cube
     2300002: Cube_001
     2300004: Cube_002
@@ -54,6 +58,8 @@ ModelImporter:
     2300028: tower_001
     2300030: Cube_004
     2300032: //RootNode
+    2300034: castle
+    2300036: tower
     3300000: Cube
     3300002: Cube_001
     3300004: Cube_002
@@ -71,6 +77,8 @@ ModelImporter:
     3300028: tower_001
     3300030: Cube_004
     3300032: //RootNode
+    3300034: castle
+    3300036: tower
     4300000: Cube_002
     4300002: Cylinder_007
     4300004: Cylinder_006
@@ -88,6 +96,7 @@ ModelImporter:
     4300028: Cylinder_008
     4300030: Cube_004
     4300032: castle
+    4300034: tower
     7400000: Default Take
     9500000: //RootNode
   materials:

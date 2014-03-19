@@ -2,13 +2,16 @@
 private var pause : boolean = false;
 private var sleep : boolean = true;
 private var player : GameObject;
+private var candleFlame : GameObject;
 private var mouseLook : Component[];
 private var aim : Component[];
+private var candleAnime : Component[];
 
 function Start () {
 	Screen.lockCursor = true;
 	windowRect = new Rect(Screen.width / 2 - 80, Screen.height / 2 - 110, 160, 220);
 	player = GameObject.FindWithTag("Player");
+	candleFlame = GameObject.Find("Candle Flames");
 }
 
 function Update () {
@@ -20,11 +23,17 @@ function Update () {
 		}
 	}
 	if (pause) {
+		// disable mouselook
 		for (var mouseLook in player.GetComponentsInChildren(MouseLook)) {
 			mouseLook.enabled = false;
 		}
+		// disable weapon aim
 		for (var aim in player.GetComponentsInChildren(Aim)) {
 			aim.enabled = false;
+		}
+		// disable candle animation
+		for (var candleAnime in candleFlame.GetComponentsInChildren(AnimatedTextureUV)) {
+			candleAnime.enabled = false;
 		}
 		Screen.lockCursor = false;
 		Time.timeScale = 0;
@@ -34,6 +43,9 @@ function Update () {
 		}
 		for (var aim in player.GetComponentsInChildren(Aim)) {
 			aim.enabled = true;
+		}
+		for (var candleAnime in candleFlame.GetComponentsInChildren(AnimatedTextureUV)) {
+			candleAnime.enabled = true;
 		}
 		Screen.lockCursor = true;
 		Time.timeScale = 1;
