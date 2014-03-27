@@ -1,8 +1,6 @@
-#pragma strict
-
+private var isFlight : boolean;
+private var isHit : boolean;
 var DestoryTime : float;
-var isFlight : boolean;
-var isHit : boolean;
 var Speed : float;
 
 function Start () {
@@ -32,14 +30,14 @@ function FixedUpdate () {
 		// Raycast detection (but not 100% stick arrows on object)
 		if (Physics.Raycast (transform.position, fwd, hit, 2)) {
 			// hit!
-			//Debug.Log("Hit!");
+			// Debug.Log("Hit!");
 
 			// stick arrow on the object
-			if (hit.distance <0.8) {
+			if (hit.distance < 0.45) {
 				transform.rigidbody.isKinematic = true;
 				
 				// arrows become to children of NPC object
-				if(hit.collider.tag == "NPC") {
+				if(hit.collider.tag == "NPCbody") {
 					transform.parent = hit.transform;
 				}
 				isFlight = false;

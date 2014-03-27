@@ -2,15 +2,18 @@
 private var pause : boolean = false;
 private var sleep : boolean = true;
 private var player : GameObject;
+private var mainCamera : GameObject;
 private var candleFlame : GameObject;
 private var mouseLook : Component[];
 private var aim : Component[];
 private var candleAnime : Component[];
+private var bgm : AudioClip;
 
 function Start () {
 	Screen.lockCursor = true;
 	windowRect = new Rect(Screen.width / 2 - 80, Screen.height / 2 - 110, 160, 220);
 	player = GameObject.FindWithTag("Player");
+	mainCamera = GameObject.FindWithTag("MainCamera");
 	candleFlame = GameObject.Find("Candle Flames");
 }
 
@@ -32,9 +35,14 @@ function Update () {
 			aim.enabled = false;
 		}
 		// disable candle animation
-		for (var candleAnime in candleFlame.GetComponentsInChildren(AnimatedTextureUV)) {
-			candleAnime.enabled = false;
+		if (candleAnime != null) {
+			for (var candleAnime in candleFlame.GetComponentsInChildren(AnimatedTextureUV)) {
+				candleAnime.enabled = false;
+			}
 		}
+		// mute music
+		mainCamera.audio.mute = true;
+		
 		Screen.lockCursor = false;
 		Time.timeScale = 0;
 	} else {
@@ -44,9 +52,14 @@ function Update () {
 		for (var aim in player.GetComponentsInChildren(Aim)) {
 			aim.enabled = true;
 		}
-		for (var candleAnime in candleFlame.GetComponentsInChildren(AnimatedTextureUV)) {
-			candleAnime.enabled = true;
+		if (candleAnime != null) {
+			for (var candleAnime in candleFlame.GetComponentsInChildren(AnimatedTextureUV)) {
+				candleAnime.enabled = true;
+			}
 		}
+		// mute music
+		mainCamera.audio.mute = false;
+		
 		Screen.lockCursor = true;
 		Time.timeScale = 1;
 	}

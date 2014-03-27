@@ -46,20 +46,24 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Activity.js" />
      <Compile Include="Assets\Scripts\Aim.js" />
      <Compile Include="Assets\Scripts\AnimatedTextureUV.js" />
      <Compile Include="Assets\Scripts\ArrowDectectionNPC.js" />
      <Compile Include="Assets\Scripts\ArrowDetection.js" />
-     <Compile Include="Assets\Scripts\Door.js" />
      <Compile Include="Assets\Scripts\GuardAI.js" />
+     <Compile Include="Assets\Scripts\GuardAINew.js" />
+     <Compile Include="Assets\Scripts\HeadLookController.js" />
      <Compile Include="Assets\Scripts\Loading.js" />
      <Compile Include="Assets\Scripts\LookAtCamera.js" />
      <Compile Include="Assets\Scripts\PauseMenu.js" />
      <Compile Include="Assets\Scripts\Shot.js" />
+     <None Include="Assets\Sounds\Dialog readme.txt" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
+     <None Include="Assets\Raw Mocap Data\Animations\_CompleteAnimationList.txt" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
